@@ -59,25 +59,41 @@ const cars = [
     }
 ]
 
+//benzine cars
 const benzineCars = cars.filter((car) => {
     if (car.fuel == 'benzine') {
         return true
     }
 })
 console.log(benzineCars)
+//semplified
+const carsBenzine = cars.filter(car => car.fuel == 'benzine')
+console.log (carsBenzine)
+//
 
+
+//diesel cars
 const dieselCars = cars.filter((car) => {
     if (car.fuel == 'diesel') {
         return true
     }
 })
-
 console.log(dieselCars)
+// simplified
+const carsDiesel = cars.filter(car => car.fuel == 'diesel')
+console.log (carsDiesel)
+//
 
+
+//others cars
 othersCars = cars.filter((car) => {
     if (car.fuel != 'diesel' && car.fuel != 'benzine') {
         return true
     }
 })
-
 console.log(othersCars)
+
+//simpified
+const restOfCards = cars.filter(car => car.fuel != 'benzine' && car.fuel != 'diesel')
+console.log (restOfCards)
+//
