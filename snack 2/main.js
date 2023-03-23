@@ -5,6 +5,6 @@ Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘
 const characters = ['pippo', 'PLUTO', 'Paperino']
 
 characters.forEach((character) => {
-    const char = character.toLowerCase().charAt(0).toUpperCase() + character.slice(1)
+    const char = character.toLowerCase().charAt(0).toUpperCase() + character.toLowerCase().slice(1)
     console.log(char)
 })
